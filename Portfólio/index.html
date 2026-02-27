@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revs.conteudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Revs.Conteudo</h1>
+    </header>
+    <main>
+        <div class="conteudo" id="cont1">
+            <h2>Bem vindo a <mark>Revisão do Conteúdo</mark></h2>
+            <p>Aqui você vai ver todo o portifólio do melhor grupo do terceirão em técnico de informática matutino.</p>
+        </div>
+        <div class="conteudo" id="cont2">
+            <h2>Nosso intuito</h2>
+            <p>Queremos formar uma coletânea de informações ao redor das matérias desenvolvidas durante o curso de técnico em informática no IFRO campus Guajará-Mirim, onde não apenas aprendemos as disciplinaas base, como também programação, software livre, criação de banco de dados e muito mais. Em suma, aqui você poderá ver os principais pontos de cada matéria. Grupo formado por: Davi, Eduardo, Lucas</p>
+        </div>
+        <div id="cover">
+            <div class="conteudo" id="cont3">
+                <h2>Navegação</h2>
+                <div id="nav">
+                    <div class="column">
+                        <div class="panel" onclick="scrollToSection('poo')">POO</div>
+                        <div class="panel" onclick="scrollToSection('lp')">L. de Programação</div>
+                    </div>
+                    <div class="column">
+                        <div class="panel" onclick="scrollToSection('bd')">Banco de dados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="margin-top: 50px; margin-left: 12vw; margin-bottom: 20px;">Navegação por scrollagem</h2>
+        <div id="poo"></div>
+        <div class="conteudo" id="cont4">
+            <h2><mark>Programação Orientada a Objetos</mark></h2>
+            <div id="ConceitosFPoo">
+                <h2>1.Conceitos Fundamentais</h2>
+                <h3> Classe e Objeto </h3>
+
+                <p>Classe: É o "molde" ou projeto que define as características e comportamentos de algo (ex: a planta de uma casa).</p>
+                <p>Objeto: É a instância real da classe, criada a partir do molde (ex: a casa construída).</p>
+                <p>Atributos: São as características ou dados do objeto (ex: cor, modelo).</p>
+                <p>Métodos: São as ações ou funções que o objeto pode realizar (ex: ligar, acelerar).</p>
+                <p>Costrutor: é uma função especial no momento da criação (instaciação) de um objeto. Sua principal função é inicializar os atributos do objeto, garantindo que ele comece com um estado válido e definido.</p>
+                <p>Herança: Uma determinada classe herda atributos da classe pai.</p>
+                <p>Abstração: é o processo de simplificar sistemas complexos modelando apenas as características e comportamentos essenciais de um objeto.</p>
+                <p>Polimorfismo: Permite que objetos de diferentes classes sejam tratados de forma unificada, mas com comportamentos específicos.</p>
+                <p>Encapsulamento: Ele priva os atributos para melhorar a segurança, evitando acessos indevidos.</p>
+            </div>
+
+            <div id="RefleT">
+                <h3>Reflexão Técnica</h3>
+                <p>Evitar acúmulo de código que causaria dificuldade caso houver algum erro dentro do código.</p>
+                <p>Os dados ficam públicos fazendo com que qualquer parte do sistema altere o estado de um objeto, causando comportamentos inesperados.</p>
+                <p>Herança vira um problema quando o sistema fica muito simplificado.</p>
+            </div>
+        </div>
+        <div id="lp"></div>
+        <div class="conteudo" id="cont5">
+            <div id="LinguagemDP">
+                <h2><mark>Linguagem de Programação</mark></h2>
+                <h3>1. Estruturas Fundamentais</h3>
+
+                <p>Variáveis e Tipos de Dados: Variáveis são espaços de memória que guardam valores. Elas podem ser do tipo primitivo ou de referência.</p>
+
+                <p>Tipos Primitivos: São os tipos mais básicos da programação:
+                    <br>• int – números inteiros
+                    <br>• float / double – números com casas decimais
+                    <br>• boolean – verdadeiro (true) ou falso (false)
+                    <br>• char – um único caractere
+                </p>
+
+                <p>Tipos de Referência: Guardam o endereço de memória de um objeto, como classes, arrays e objetos criados pelo programador.</p>
+
+                <p>Estruturas Condicionais: Permitem que o programa tome decisões usando if, else e switch.</p>
+
+                <p>Estruturas de Repetição: Permitem repetir blocos de código usando for, while e do-while.</p>
+
+                <p>Funções / Métodos: Blocos de código reutilizáveis que executam tarefas específicas.</p>
+
+                <p>Tratamento de Erros: Utilizado para evitar que o programa pare ao encontrar falhas, usando mecanismos como try e catch.</p>
+
+                <p>Manipulação de Listas/Arrays: Estruturas que armazenam vários valores em uma única variável.</p>
+            </div>
+
+            <div id="BoasPraticas">
+                <h3>2. Boas Práticas</h3>
+
+                <p>Padronização de nomes: Utilizar nomes claros e organizados para facilitar a leitura do código.</p>
+                <p>Organização de arquivos: Separar arquivos por responsabilidade.</p>
+                <p>Separação de responsabilidades: Cada parte do sistema deve ter uma função específica.</p>
+                <p>Versionamento com Git: Utilizar controle de versão para registrar alterações no código.</p>
+            </div>
+
+            <div id="MiniProjetoConsole">
+                <h3>3. Mini Projeto Console</h3>
+
+                <p>Menu interativo: Interface no console com opções numeradas.</p>
+                <p>Cadastro simples: Permitir registro de informações básicas.</p>
+                <p>Validação de dados: Garantir que os dados estejam corretos antes de salvar.</p>
+                <p>Armazenamento temporário em memória: Utilizar listas ou arrays para guardar os dados enquanto o programa estiver rodando.</p>
+            </div>
+        </div>
+            <div id="bd"></div>
+        <div class="conteudo" id="cont6">
+            <div id="BancoDeDados">
+                <h2><mark>Banco de Dados</mark></h2>
+
+                <h3>1. Conceitos</h3>
+
+                <p>Dado vs Informação: Dado é um valor bruto sem contexto. Informação é o dado processado e organizado com significado.</p>
+
+                <p>Banco de Dados e SGBD: Banco de Dados é um conjunto organizado de dados. SGBD é o sistema que gerencia esse banco, como MySQL ou PostgreSQL.</p>
+
+                <p>Tabelas, Registros e Campos: Tabela é onde os dados são armazenados. Registro é uma linha da tabela. Campo é uma coluna da tabela.</p>
+
+                <p>Chave Primária e Estrangeira: Chave primária identifica um registro de forma única. Chave estrangeira faz a ligação entre tabelas.</p>
+
+                <p>Relacionamentos (1:1, 1:N, N:N): Definem como as tabelas se conectam entre si.</p>
+
+                <p>Normalização: Processo de organizar as tabelas para evitar redundância e melhorar a integridade dos dados.</p>
+
+                <h3>2. Modelagem</h3>
+
+                <p>Modelo Conceitual (DER): Representação gráfica das entidades e seus relacionamentos.</p>
+
+                <p>Modelo Lógico: Estrutura detalhada das tabelas com seus campos e tipos.</p>
+
+                <p>Script SQL de criação das tabelas: Comandos SQL usados para criar as tabelas no banco de dados.</p>
+
+                <h3>3. Consultas SQL</h3>
+
+                <p>SELECT: Consulta dados da tabela.</p>
+                <p>INSERT: Insere novos registros.</p>
+                <p>UPDATE: Atualiza registros existentes.</p>
+                <p>DELETE: Remove registros.</p>
+                <p>JOIN: Junta dados de duas ou mais tabelas.</p>
+                <p>WHERE: Filtra registros com base em uma condição.</p>
+                <p>GROUP BY: Agrupa registros para realizar cálculos.</p>
+
+            </div>
+        </div>
+    </main>
+    <script>
+        function scrollToSection(elementid) {
+            const element = document.getElementById(elementid);
+            element.scrollIntoView({
+                behavior: 'smooth', // Smoothly scrolls to the element
+                block: 'start'      // Aligns the top of the element to the top of the viewport
+            });
+        }
+    </script>
+</body>
+</html>
